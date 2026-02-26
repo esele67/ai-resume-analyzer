@@ -2,6 +2,7 @@
 
 # Core App
 streamlit>=1.28.0
+gunicorn>=20.0.0
 
 # Data & ML
 numpy>=1.24.0
