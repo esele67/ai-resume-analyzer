@@ -1,22 +1,22 @@
-# AI-Powered Resume Analyzer and ATS Compatibility Checker
-# Core dependencies
+# AI Resume Analyzer - Stable Requirements
+
+# Core App
 streamlit>=1.28.0
-pandas>=1.5.0
+
+# Data & ML
 numpy>=1.24.0
+pandas>=1.5.0
 scikit-learn>=1.3.0
 
-# NLP and Text Processing
+# NLP
 nltk>=3.8
 
-# Document Processing
+# Document Parsing
 pdfplumber>=0.9.0
 python-docx>=0.8.11
 
-# OCR and Image Processing (Optional - for scanned PDFs)
-pytesseract>=0.3.10
-pdf2image>=1.16.0
-opencv-python>=4.8.0
+# Utilities
 Pillow>=9.0.0
 
-# Additional utilities
-python-magic>=0.4.27
+# Backend API (if using Flask routes)
+flask>=2.3.0
