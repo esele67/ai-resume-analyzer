@@ -698,7 +698,7 @@ def batch_analyze():
 # ─────────────────────────────────────────────────────────────
 @app.route('/')
 def index():
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('.', 'web/index.html')
 
 @app.route('/analyze', methods=['POST'])
 def analyze_endpoint():
@@ -740,4 +740,4 @@ if __name__ == '__main__':
     print(f"   spaCy NER  : {'OK' if HAS_SPACY else 'MISSING  pip install spacy && python -m spacy download en_core_web_sm'}")
     print(f"   NLTK       : {'OK' if HAS_NLTK else 'MISSING  pip install nltk'}")
     print("=" * 55)
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=8080)
